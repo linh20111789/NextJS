@@ -23,22 +23,17 @@ const Header = () => {
         className="flex flex-row items-center"
       >
         <SocialIcon
-          url="https://twitter.com/jaketrent"
+          url="https://www.facebook.com/linh.yok.9/"
           fgColor="gray"
           bgColor="transparent"
         />
         <SocialIcon
-          url="https://www.facebook.com/profile.php?id=100033127445154"
+          url="https://github.com/linh20111789"
           fgColor="gray"
           bgColor="transparent"
         />
         <SocialIcon
-          url="https://github.com/PhongThanh0907"
-          fgColor="gray"
-          bgColor="transparent"
-        />
-        <SocialIcon
-          url="https://www.linkedin.com/in/phong-ph%E1%BA%A1m-034480248/"
+          url="https://www.linkedin.com/in/linh-van-nguyen-882967119/"
           fgColor="gray"
           bgColor="transparent"
         />

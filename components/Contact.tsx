@@ -30,15 +30,15 @@ const Contact = () => {
           <div className="space-y-10 pb-4">
             <div className="flex items-center space-x-5 justify-center xl:justify-start">
               <PhoneIcon className="text-[#2cf9fa] h-7 w-7 animate-pulse" />
-              <p className="text-xl">0979399509</p>
+              <p className="text-xl">+84 377 764 551</p>
             </div>
             <div className="flex items-center space-x-5 justify-center xl:justify-start">
               <MapIcon className="text-[#2cf9fa] h-7 w-7 animate-pulse" />
-              <p className="text-xl">Đoan Van Bo P14 Q4 TPHCM</p>
+              <p className="text-xl">Ha Noi, Viet Nam</p>
             </div>
             <div className="flex items-center space-x-5 justify-center xl:justify-start">
               <EnvelopeIcon className="text-[#2cf9fa] h-7 w-7 animate-pulse" />
-              <p className="text-xl">phong.thanh971997@gmail.com</p>
+              <p className="text-xl">linh20111789@gmail.com</p>
             </div>
           </div>
 

@@ -9,8 +9,8 @@ const Hero = () => {
   const [text, count] = useTypewriter({
     words: [
       "Welcome to my Portfolio",
-      "Hi, I am a Web Developer",
-      "My name is Phong",
+      "My name is Nguyen Van Linh",
+      "I am a Software Engineer",
     ],
     loop: true,
     delaySpeed: 2000,
