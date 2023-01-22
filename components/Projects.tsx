@@ -1,10 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
-import img3 from "../assets/img2.jpg";
-import img2 from "../assets/img3.jpg";
-import img4 from "../assets/img6.jpg";
-import img5 from "../assets/img5.jpg";
-import img1 from "../assets/project1.jpg";
+import printer from "../assets/printer.png";
+import gas from "../assets/gas.png";
+import sdr from "../assets/sdr.jpg";
+import pcapp from "../assets/pcapp.png";
+import tpi_next from "../assets/tpi_next.png";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -14,99 +14,62 @@ const Projects = (props: Props) => {
   const projects = [
     {
       stt: 1,
-      nameProject: "Shop Ecommerce",
-      src: img1,
-      linkDemo: "https://shop-ecommerce-v2.vercel.app/",
-      linkRepository: "https://github.com/PhongThanh0907/Shop-Ecommerce-V2",
-      linkBE: "https://github.com/PhongThanh0907/BE-Ecommerce",
-      description: [
-        "Build user UX/UI",
-        "Show products",
-        "Search by brands, type, price",
-        "Sort",
-        "Shopping Cart",
-        "Others...",
-      ],
+      nameProject: "Web application for Test Improvement Model (TPI Next)",
+      src: tpi_next,
       Technologies: [
-        "ReactJS",
-        "MongoDB",
-        "Typescript",
-        "NodeJS",
-        "CSS",
-        "Express",
-        "Redux-toolkit",
-        "JWT",
-        "TailwindCSS",
-        "Others...",
+        "Ruby (RoR)",
+        "PostgreSQL",
+        "Redis",
+        "Javascript",
+        "CSS,Bootstrap",
+        "HTML",
+        "Jquery/Ajax",
+        "Docker",
       ],
     },
     {
       stt: 2,
-      nameProject: "The Coffee House Clone",
-      src: img2,
-      linkDemo: "",
-      linkRepository: "https://github.com/PhongThanh0907/cf-house-clone",
-      description: ["UX/UI"],
+      nameProject: "GAS project",
+      src: gas,
       Technologies: [
-        "ReactJS",
-        "Typescript",
-        "NextJS",
-        "Redux-toolkit",
-        "TailwindCSS",
-        "MongoDB",
-        "NodeJS",
-        "NodeJS",
-        "Express",
-        "JWT",
-        "Others...",
+        "C#",
+        ".NET framework",
+        "TCP/IP",
+        "OpenCV",
+        "FFMPEG",
+        "Activity diagram",
+        "Sequence diagram",
       ],
     },
     {
       stt: 3,
-      nameProject: "My Portfolio",
-      src: img3,
-      linkDemo: "https://myportfolio-mocha-eta.vercel.app/",
-      linkRepository: "https://github.com/PhongThanh0907/myportfolio",
-      description: ["Build user UX/UI", "Show Information"],
+      nameProject: "Printer",
+      src: printer,
       Technologies: [
-        "ReactJS",
-        "Typescript",
-        "NextJS",
-        "CSS",
-        "Framer Motion",
-        "TailwindCSS",
-        "Animation",
-        "Others...",
+        "C/C++/Python",
+        "Linux (Debian)",
+        "Shell Script",
       ],
     },
     {
       stt: 4,
-      nameProject: "Shoes Shop",
-      src: img4,
-      linkDemo: "https://shoesshop-mi.vercel.app/",
-      linkRepository: "https://github.com/PhongThanh0907/shoesshop_v2",
-      description: ["Build UX/UI", "Show products", "Build Animation"],
+      nameProject: "SDR",
+      src: sdr,
       Technologies: [
-        "ReactJS",
-        "Typescript",
-        "CSS",
-        "TailwindCSS",
-        "Animation",
+        "Embedded C",
+        "Realtime OS",
+        "SPI/I2C/UART",
+        "Altium Designer",
       ],
     },
     {
       stt: 5,
-      nameProject: "CyberSoft Project",
-      src: img5,
-      linkDemo: "https://movie-app-booking-eight.vercel.app/",
-      linkRepository: "https://github.com/PhongThanh0907/movie-app-booking",
-      description: ["UX/UI, show movie, booking ticket"],
+      nameProject: "Window application for simulating “Central Control Board”",
+      src: pcapp,
       Technologies: [
-        "ReactJS",
-        "Typescript",
-        "CSS",
-        "MaterialUI + React Bootstrap",
-        "Redux - Redux-toolkit",
+        "C++",
+        "MFC",
+        "COM",
       ],
     },
   ];
@@ -128,39 +91,10 @@ const Projects = (props: Props) => {
             <div className="space-y-3 px-0 md:px-10 max-w-6xl">
               <h4 className="text-3xl font-semibold text-center">
                 <span className="underline decoration-[#2cf9fa]/50">
-                  Case {i + 1} of {projects.length}
+                  Project {i + 1} of {projects.length}
                 </span>
                 : {project.nameProject}
               </h4>
-              <h4>
-                Link Demo:{" "}
-                <Link
-                  className="text-gray-400 hover:text-white duration-300"
-                  href={project?.linkDemo}
-                >
-                  {project.linkDemo}
-                </Link>{" "}
-              </h4>
-              <h4>
-                Link Repository:{" "}
-                <Link
-                  className="text-gray-400 hover:text-white duration-300"
-                  href={project.linkRepository}
-                >
-                  {project.linkRepository}
-                </Link>{" "}
-              </h4>
-              {project.linkBE && (
-                <h4>
-                  Link Backend:{" "}
-                  <Link
-                    className="text-gray-400 hover:text-white duration-300"
-                    href={project.linkRepository}
-                  >
-                    {project.linkBE}
-                  </Link>{" "}
-                </h4>
-              )}
               <div className="grid grid-cols-2">
                 <div className="col-span-1 flex flex-col">
                   <h4>Technology:</h4>
@@ -169,16 +103,6 @@ const Projects = (props: Props) => {
                       <li>{item}</li>
                     ))}
                   </ul>
-                </div>
-                <div className="col-span-1">
-                  <h4>
-                    Description:{" "}
-                    <span className="text-gray-400">
-                      {project.description.map((item) => (
-                        <li>{item}</li>
-                      ))}
-                    </span>
-                  </h4>
                 </div>
               </div>
             </div>

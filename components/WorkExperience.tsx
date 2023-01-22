@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import ExperienceCard from "./ExperienceCard";
+import ExperienceCard_IBridge from "./ExperienceCard_IBridge";
 
 type Props = {};
 
@@ -12,7 +13,7 @@ const WorkExperience = (props: Props) => {
       </h3>
       <div className="w-full flex space-x-10 overflow-x-scroll px-20 mt-20 snap-x snap-mandatory scrollbar-track-gray-400/20 scrollbar-thumb-[#2cf9fa]/80 scrollbar-thin">
         <ExperienceCard />
-        <ExperienceCard />
+        <ExperienceCard_IBridge />
       </div>
     </motion.div>
   );
